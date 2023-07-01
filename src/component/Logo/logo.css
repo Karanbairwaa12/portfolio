@@ -1,0 +1,38 @@
+.karanlogo {
+    width: 80%;
+    margin-top: 107px;
+    /* margin-bottom: 150px; */
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
+}
+.linkbox {
+    display: inline-block;
+    float:right;
+    animation: fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation-fill-mode: backwards; 
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+@keyframes fadelogo {
+    0% {
+        opacity: 0;
+    transform: translateX(10vh);
+    }
+    100% {
+        opacity: 1;
+    transform: translateX(0vh);
+    }
+}
+.karanlogo a {
+    float: right;
+    font-size:24px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+    transition:.2s;
+}
+.karanlogo a:hover {
+    transform:translateX(-20px)
+     
+}

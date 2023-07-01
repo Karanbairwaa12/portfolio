@@ -1,0 +1,129 @@
+
+
+.contactPage {
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.contact {
+    width:75%;
+    margin-top:285px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contact h1 {
+    
+    color: #08fdd8;
+    font-size:40px;
+}
+
+.contact p {
+      
+    font-size:16px;
+    color:#fff;
+    margin:20px 0px;
+}
+.contactForm {
+    margin:10px 0px 100px 0px
+}
+.contactForm  form{
+    width:100%;
+    max-width: 675px;
+    
+}
+
+.inputGroup {
+    margin-bottom: 35px;
+    position: relative;
+}
+input,textarea {
+    width:100%;
+    padding:10px;
+    outline:0;
+    background: #080909;
+    font-size: 16px;
+    color:#fff;
+    border:none;
+
+}
+textarea {
+    resize:none;
+}
+label {
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding:10px;
+    font-size:14px;
+    color:#fff;
+    cursor: text;
+    transition: .2s;
+}
+button {
+    
+    border: 1px solid #08fdd8;
+    padding: 10px 25px;
+    letter-spacing: 3px;
+    font-size: 1em;
+    background: transparent;
+    color: #fff;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top:-35px;
+    font-size: 12px;
+}
+/* for remove input number icon */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .inputGroup {
+    flex-basis: 48%;
+    padding:0;
+}
+
+.socialMedia {
+    width:100%;
+    margin-top:70px;
+}
+.socialMedia a {
+    display: inline-block;
+    text-decoration: none;
+    color:gray;
+
+}
+
+@media only screen and (max-width:520px) {
+    .row {
+        display: block;
+    }
+    button {
+        padding: 10px 15px;
+        letter-spacing: 2px;
+        font-size: .8em;
+    }
+}
+
+
+

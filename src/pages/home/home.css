@@ -1,0 +1,154 @@
+
+
+.main {
+    width:60%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+}
+/*h1 {
+   
+    
+
+    
+    position: fixed;
+    line-height: 110%;
+    letter-spacing: -2px;
+    font-size: 3.2em;
+    font-size: 18vm;
+    //font-size: 19vmin; 
+    font-size: 18vmin;
+    z-index: 100;
+}
+.text1 {
+    color:#fff;
+}
+.text2,.text3 {
+    color:#08fdd8;
+    
+} */
+.pageLinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 25vw;
+    
+}
+
+.pageLinks h1 {
+   
+    font-size: 78px;
+    padding: 0px;
+    margin: 0px;
+    color:#fff;
+    cursor:pointer;
+    z-index: 100;
+}
+
+.pageLinks h1 a {
+    display: inline-block;
+    text-decoration: none;
+    color:#08fdd8;
+}
+
+.pageLinks h1:nth-child(1) a {
+    
+    color:#fff;
+}
+.images {
+    height:100vh;
+    width:60%;
+    background-size: cover;
+    position: fixed;
+    top:0;
+    right:0;
+    
+}
+img {
+    height:100vh;
+    animation: bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+    animation-fill-mode: backwards;
+}
+@keyframes bg-photo {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+.myNav:hover {
+    transform: translateX(60px);
+}
+.myNav:hover .text1{
+    color:#fd1056;
+}
+.myNav:hover .text2{
+    color:#fd1056;
+}
+.myNav:hover .text3{
+    color:#fd1056;
+}
+
+
+.animate {
+    -webkit-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation: animate .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0vh);
+    }
+}
+/* @media screen and (min-width:1367px) and (max-width:1920px) and (max-height:1080px) {
+    .myNav {
+        line-height: 140px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1366px)  {
+    .myNav {
+        line-height: 120px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:768px) and (max-height:1024px) {
+    .myNav {
+        line-height: 110px;
+    }
+    .images {
+        left:18%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:480px) {
+    .myNav {
+        line-height: 80px;
+    }
+    .images {
+        left:15%;
+    }
+} */
+
+@media only screen and (max-width:380px) {
+    .images {
+        right:280px;
+    }
+}
+@media only screen and (min-width:381px) and (max-width:767px) {
+    .images {
+        right:80px;
+    }
+}
